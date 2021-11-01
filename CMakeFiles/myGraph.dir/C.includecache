@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/Cours/code/src/main/Graph.c
+Graph.h
+/home/thomas/Documents/Cours/code/src/main/Graph.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+
+include/main/Graph.h
+stdbool.h
+-
+

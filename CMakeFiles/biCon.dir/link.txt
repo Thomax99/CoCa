@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbiCon.a  CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o
+/usr/bin/ranlib libbiCon.a

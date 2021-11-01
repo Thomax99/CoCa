@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/Cours/code/examples/graphUsage.c
+stdio.h
+-
+Graph.h
+-
+Parsing.h
+-
+
+include/main/Graph.h
+stdbool.h
+-
+
+include/main/Parsing.h
+GraphList.h
+include/main/GraphList.h
+Graph.h
+include/main/Graph.h
+
+src/parser/include/EdgeList.h
+
+src/parser/include/GraphList.h
+EdgeList.h
+src/parser/include/EdgeList.h
+NodeList.h
+src/parser/include/NodeList.h
+
+src/parser/include/NodeList.h
+stdbool.h
+-
+

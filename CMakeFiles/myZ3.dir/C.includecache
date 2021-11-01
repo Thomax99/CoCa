@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thomas/Documents/Cours/code/src/main/Z3Tools.c
+Z3Tools.h
+/home/thomas/Documents/Cours/code/src/main/Z3Tools.h
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+
+include/main/Z3Tools.h
+z3.h
+-
+stdbool.h
+-
+

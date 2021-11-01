@@ -1,0 +1,1 @@
+/usr/bin/gcc -g  -rdynamic CMakeFiles/graphParser.dir/examples/graphUsage.c.o  -o graphParser  libmyGraph.a libparser.a 
