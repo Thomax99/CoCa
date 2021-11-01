@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Documents/Cours/code/examples/Z3Example.c
+/home/thomas/Documents/cocode/examples/Z3Example.c
 stdio.h
 -
 Z3Tools.h
-/home/thomas/Documents/Cours/code/examples/Z3Tools.h
+/home/thomas/Documents/cocode/examples/Z3Tools.h
 
 include/main/Z3Tools.h
 z3.h

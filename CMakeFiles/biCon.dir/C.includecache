@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConReduction.c
+/home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConReduction.c
 EdgeConReduction.h
-/home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConReduction.h
+/home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConReduction.h
 Z3Tools.h
-/home/thomas/Documents/Cours/code/src/EdgeConProblem/Z3Tools.h
+/home/thomas/Documents/cocode/src/EdgeConProblem/Z3Tools.h
 sys/types.h
 -
 sys/stat.h

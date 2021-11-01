@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Documents/Cours/code
+CMAKE_SOURCE_DIR = /home/thomas/Documents/cocode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Documents/Cours/code
+CMAKE_BINARY_DIR = /home/thomas/Documents/cocode
 
 # Include any dependencies generated for this target.
 include CMakeFiles/myZ3.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/myZ3.dir/flags.make
 
 CMakeFiles/myZ3.dir/src/main/Z3Tools.c.o: CMakeFiles/myZ3.dir/flags.make
 CMakeFiles/myZ3.dir/src/main/Z3Tools.c.o: src/main/Z3Tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myZ3.dir/src/main/Z3Tools.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myZ3.dir/src/main/Z3Tools.c.o   -c /home/thomas/Documents/Cours/code/src/main/Z3Tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myZ3.dir/src/main/Z3Tools.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myZ3.dir/src/main/Z3Tools.c.o   -c /home/thomas/Documents/cocode/src/main/Z3Tools.c
 
 CMakeFiles/myZ3.dir/src/main/Z3Tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myZ3.dir/src/main/Z3Tools.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/Cours/code/src/main/Z3Tools.c > CMakeFiles/myZ3.dir/src/main/Z3Tools.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/cocode/src/main/Z3Tools.c > CMakeFiles/myZ3.dir/src/main/Z3Tools.c.i
 
 CMakeFiles/myZ3.dir/src/main/Z3Tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myZ3.dir/src/main/Z3Tools.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/Cours/code/src/main/Z3Tools.c -o CMakeFiles/myZ3.dir/src/main/Z3Tools.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/cocode/src/main/Z3Tools.c -o CMakeFiles/myZ3.dir/src/main/Z3Tools.c.s
 
 # Object files for target myZ3
 myZ3_OBJECTS = \
@@ -80,7 +80,7 @@ myZ3_EXTERNAL_OBJECTS =
 libmyZ3.a: CMakeFiles/myZ3.dir/src/main/Z3Tools.c.o
 libmyZ3.a: CMakeFiles/myZ3.dir/build.make
 libmyZ3.a: CMakeFiles/myZ3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmyZ3.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmyZ3.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/myZ3.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myZ3.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/myZ3.dir/clean:
 .PHONY : CMakeFiles/myZ3.dir/clean
 
 CMakeFiles/myZ3.dir/depend:
-	cd /home/thomas/Documents/Cours/code && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code/CMakeFiles/myZ3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thomas/Documents/cocode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode/CMakeFiles/myZ3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/myZ3.dir/depend
 

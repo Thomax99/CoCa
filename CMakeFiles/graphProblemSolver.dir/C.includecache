@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Documents/Cours/code/src/main/main.c
+/home/thomas/Documents/cocode/src/main/main.c
 Graph.h
-/home/thomas/Documents/Cours/code/src/main/Graph.h
+/home/thomas/Documents/cocode/src/main/Graph.h
 Parsing.h
-/home/thomas/Documents/Cours/code/src/main/Parsing.h
+/home/thomas/Documents/cocode/src/main/Parsing.h
 EdgeConReduction.h
-/home/thomas/Documents/Cours/code/src/main/EdgeConReduction.h
+/home/thomas/Documents/cocode/src/main/EdgeConReduction.h
 Z3Tools.h
-/home/thomas/Documents/Cours/code/src/main/Z3Tools.h
+/home/thomas/Documents/cocode/src/main/Z3Tools.h
 Parser.h
-/home/thomas/Documents/Cours/code/src/main/Parser.h
+/home/thomas/Documents/cocode/src/main/Parser.h
 EdgeConGraph.h
-/home/thomas/Documents/Cours/code/src/main/EdgeConGraph.h
+/home/thomas/Documents/cocode/src/main/EdgeConGraph.h
 EdgeConResolution.h
-/home/thomas/Documents/Cours/code/src/main/EdgeConResolution.h
+/home/thomas/Documents/cocode/src/main/EdgeConResolution.h
 stdio.h
 -
 stdlib.h

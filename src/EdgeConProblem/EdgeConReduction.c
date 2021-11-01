@@ -33,6 +33,53 @@ Z3_ast getVariableLevelInSpanningTree(Z3_context ctx, int level, int component)
 }
 
 /**
+ * @brief Get a formula which ensure that a given edge is associated to at most one translator
+ * 
+ * @param ctx The solver context
+ * @param edgeSource the source of the dge.
+ * @param edgeTarget the target of the edge
+ * @param nTranslators the number of translators
+ * @return Z3_ast The corresponding formula
+ */
+
+Z3_ast getFormulaOneEdgeAtMostOneTranslator(Z3_context ctx, int edgeSource, int edgeTarget, int nTranslators) {
+    Z3_ast * formulasEachTranslator = malloc(sizeof(Z3_ast)*(nTranslators*(nTranslators - 1) / 2)) ; // formulasEachEdge[i] contains a formula not x_e,i or not x_e,j
+    int curFormulaNb = 0 ;
+    for (int i = 0 ; i < nTranslators ; i++) {
+        for (int j = i + 1 ; j < nTranslators ; j++) {
+            Z3_ast form_Or[] = {Z3_mk_not(ctx, getVariableIsIthTranslator(ctx, edgeSource, edgeTarget, i)),
+                    Z3_mk_not(ctx, getVariableIsIthTranslator(ctx, edgeSource, edgeTarget, j))} ;
+            formulasEachTranslator[curFormulaNb] = Z3_mk_or(ctx, 2, form_Or) ;
+            curFormulaNb ++ ;
+        }
+    }
+    Z3_ast outputAst = Z3_mk_and(ctx, curFormulaNb, formulasEachTranslator) ;
+    free(formulasEachTranslator) ;
+    return outputAst ;
+}
+
+/**
+ * @brief Get a formula which ensure that any edge is associated to at most on translator
+ * 
+ * @param ctx The solver context
+ * @param edgeSet The associated edgeSet, of type edgeSet[i] = (j,k) ; when j, k is a set of edge.
+ * @param nbEdges The number of edges on the edgeSet
+ * @param nTranslators The number of translators
+ * @return Z3_ast The corresponding formula
+ * @pre graph must be an initialized EdgeConGraph with computed connected components.
+ */
+Z3_ast getFormulaForeachOneEdgeAtMostOneTranslator(Z3_context ctx, int ** edgeSet, int nbEdges, int nTranslators) {
+    Z3_ast * formulasEachEdge = malloc(sizeof(Z3_ast)*nbEdges) ;
+    for (int e = 0 ; e < nbEdges ; e++) {
+        formulasEachEdge[e] = getFormulaOneEdgeAtMostOneTranslator(ctx, edgeSet[e][0], edgeSet[e][1], nTranslators) ;
+    }
+    Z3_ast output =  Z3_mk_and(ctx, nbEdges, formulasEachEdge) ;
+    free(formulasEachEdge) ;
+    return output ;
+}
+
+
+/**
  * @brief Get a formula which ensure that a given translator is associated to at most on edge
  * 
  * @param ctx The solver context
@@ -42,9 +89,7 @@ Z3_ast getVariableLevelInSpanningTree(Z3_context ctx, int level, int component)
  * @return Z3_ast The corresponding formula
  */
 Z3_ast getFormulaOneTranslatorAtMostOneEdge(Z3_context ctx, int ** edgeSet, int nbEdges, int translatorNumber) {
-    fprintf(stderr, "nTrans is %d\n", translatorNumber) ;
     Z3_ast * formulasEachEdge = malloc(sizeof(Z3_ast)*(nbEdges*(nbEdges - 1) / 2)) ; // formulasEachEdge[i] contains a formula not x_e,i or not x_e',i*
-    fprintf(stderr, "nTrans is %d\n", translatorNumber) ;
     int curFormulaNb = 0 ;
     for (int e = 0 ; e < nbEdges ; e++) {
         for (int e_p = e + 1 ; e_p < nbEdges ; e_p++) {
@@ -54,7 +99,9 @@ Z3_ast getFormulaOneTranslatorAtMostOneEdge(Z3_context ctx, int ** edgeSet, int 
             curFormulaNb ++ ;
         }
     }
-    return Z3_mk_and(ctx, curFormulaNb, formulasEachEdge) ;
+    Z3_ast output = Z3_mk_and(ctx, curFormulaNb, formulasEachEdge) ;
+    free(formulasEachEdge) ;
+    return output ;
 }
 
 /**
@@ -70,10 +117,11 @@ Z3_ast getFormulaOneTranslatorAtMostOneEdge(Z3_context ctx, int ** edgeSet, int 
 Z3_ast getFormulaForeachOneTranslatorAtMostOneEdge(Z3_context ctx, int ** edgeSet, int nbEdges, int nTranslators) {
     Z3_ast * formulasEachTranslator = malloc(sizeof(Z3_ast)*nTranslators) ;
     for (int i = 0 ; i < nTranslators ; i++) {
-         fprintf(stderr, "i is %d\n", i) ;
         formulasEachTranslator[i] = getFormulaOneTranslatorAtMostOneEdge(ctx, edgeSet, nbEdges, i) ;
     }
-    return Z3_mk_and(ctx, nTranslators, formulasEachTranslator) ;
+    Z3_ast output =  Z3_mk_and(ctx, nTranslators, formulasEachTranslator) ;
+    free(formulasEachTranslator) ;
+    return output ;
 }
 
 /**
@@ -87,7 +135,10 @@ Z3_ast getFormulaForeachOneTranslatorAtMostOneEdge(Z3_context ctx, int ** edgeSe
  * @pre graph must be an initialized EdgeConGraph with computed connected components.
  */
 Z3_ast getFormulaForEachOneTranslatorOneEdge(Z3_context ctx, int ** edgeSet, int nbEdges, int nTranslators) {
-    return getFormulaForeachOneTranslatorAtMostOneEdge(ctx, edgeSet, nbEdges, nTranslators) ;
+    Z3_ast contraints [2] ;
+    contraints[0] = getFormulaForeachOneTranslatorAtMostOneEdge(ctx, edgeSet, nbEdges, nTranslators) ;
+    contraints[1] =  getFormulaForeachOneEdgeAtMostOneTranslator(ctx, edgeSet, nbEdges, nTranslators) ;
+    return Z3_mk_and(ctx, 2, contraints) ;
 }
 
 Z3_ast EdgeConReduction(Z3_context ctx, EdgeConGraph edgeGraph, int cost)

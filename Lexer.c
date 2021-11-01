@@ -1,6 +1,6 @@
-#line 2 "/home/thomas/Documents/Cours/code/Lexer.c"
+#line 2 "/home/thomas/Documents/cocode/Lexer.c"
 
-#line 4 "/home/thomas/Documents/Cours/code/Lexer.c"
+#line 4 "/home/thomas/Documents/cocode/Lexer.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -497,10 +497,10 @@ static const flex_int16_t yy_chk[120] =
  #define MAXSIZE  1024
 char any_name_s[MAXSIZE];
 
-#line 501 "/home/thomas/Documents/Cours/code/Lexer.c"
+#line 501 "/home/thomas/Documents/cocode/Lexer.c"
 /* %option outfile="Lexer.c" header-file="Lexer.h"  //for normal make.*/
 #define YY_NO_UNISTD_H 1
-#line 504 "/home/thomas/Documents/Cours/code/Lexer.c"
+#line 504 "/home/thomas/Documents/cocode/Lexer.c"
 
 #define INITIAL 0
 
@@ -776,7 +776,7 @@ YY_DECL
 	{
 #line 62 "src/parser/Lexer.l"
 
-#line 780 "/home/thomas/Documents/Cours/code/Lexer.c"
+#line 780 "/home/thomas/Documents/cocode/Lexer.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -956,7 +956,7 @@ YY_RULE_SETUP
 #line 92 "src/parser/Lexer.l"
 ECHO;
 	YY_BREAK
-#line 960 "/home/thomas/Documents/Cours/code/Lexer.c"
+#line 960 "/home/thomas/Documents/cocode/Lexer.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 

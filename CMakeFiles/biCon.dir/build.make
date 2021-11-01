@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Documents/Cours/code
+CMAKE_SOURCE_DIR = /home/thomas/Documents/cocode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Documents/Cours/code
+CMAKE_BINARY_DIR = /home/thomas/Documents/cocode
 
 # Include any dependencies generated for this target.
 include CMakeFiles/biCon.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/biCon.dir/flags.make
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o: CMakeFiles/biCon.dir/flags.make
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o: src/EdgeConProblem/EdgeConGraph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o   -c /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConGraph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o   -c /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConGraph.c
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConGraph.c > CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConGraph.c > CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.i
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConGraph.c -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConGraph.c -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.s
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o: CMakeFiles/biCon.dir/flags.make
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o: src/EdgeConProblem/EdgeConReduction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o   -c /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConReduction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o   -c /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConReduction.c
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConReduction.c > CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConReduction.c > CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.i
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConReduction.c -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConReduction.c -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.s
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o: CMakeFiles/biCon.dir/flags.make
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o: src/EdgeConProblem/EdgeConResolution.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o   -c /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConResolution.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o   -c /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConResolution.c
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConResolution.c > CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConResolution.c > CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.i
 
 CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConResolution.c -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConResolution.c -o CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.s
 
 # Object files for target biCon
 biCon_OBJECTS = \
@@ -110,7 +110,7 @@ libbiCon.a: CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o
 libbiCon.a: CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o
 libbiCon.a: CMakeFiles/biCon.dir/build.make
 libbiCon.a: CMakeFiles/biCon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libbiCon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libbiCon.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/biCon.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/biCon.dir/link.txt --verbose=$(VERBOSE)
 
@@ -124,6 +124,6 @@ CMakeFiles/biCon.dir/clean:
 .PHONY : CMakeFiles/biCon.dir/clean
 
 CMakeFiles/biCon.dir/depend:
-	cd /home/thomas/Documents/Cours/code && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code/CMakeFiles/biCon.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thomas/Documents/cocode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode/CMakeFiles/biCon.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/biCon.dir/depend
 

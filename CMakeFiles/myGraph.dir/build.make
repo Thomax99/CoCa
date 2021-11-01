@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Documents/Cours/code
+CMAKE_SOURCE_DIR = /home/thomas/Documents/cocode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Documents/Cours/code
+CMAKE_BINARY_DIR = /home/thomas/Documents/cocode
 
 # Include any dependencies generated for this target.
 include CMakeFiles/myGraph.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/myGraph.dir/flags.make
 
 CMakeFiles/myGraph.dir/src/main/Graph.c.o: CMakeFiles/myGraph.dir/flags.make
 CMakeFiles/myGraph.dir/src/main/Graph.c.o: src/main/Graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myGraph.dir/src/main/Graph.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myGraph.dir/src/main/Graph.c.o   -c /home/thomas/Documents/Cours/code/src/main/Graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/myGraph.dir/src/main/Graph.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/myGraph.dir/src/main/Graph.c.o   -c /home/thomas/Documents/cocode/src/main/Graph.c
 
 CMakeFiles/myGraph.dir/src/main/Graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/myGraph.dir/src/main/Graph.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/Cours/code/src/main/Graph.c > CMakeFiles/myGraph.dir/src/main/Graph.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/thomas/Documents/cocode/src/main/Graph.c > CMakeFiles/myGraph.dir/src/main/Graph.c.i
 
 CMakeFiles/myGraph.dir/src/main/Graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/myGraph.dir/src/main/Graph.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/Cours/code/src/main/Graph.c -o CMakeFiles/myGraph.dir/src/main/Graph.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/thomas/Documents/cocode/src/main/Graph.c -o CMakeFiles/myGraph.dir/src/main/Graph.c.s
 
 # Object files for target myGraph
 myGraph_OBJECTS = \
@@ -80,7 +80,7 @@ myGraph_EXTERNAL_OBJECTS =
 libmyGraph.a: CMakeFiles/myGraph.dir/src/main/Graph.c.o
 libmyGraph.a: CMakeFiles/myGraph.dir/build.make
 libmyGraph.a: CMakeFiles/myGraph.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Documents/Cours/code/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmyGraph.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thomas/Documents/cocode/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libmyGraph.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/myGraph.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myGraph.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/myGraph.dir/clean:
 .PHONY : CMakeFiles/myGraph.dir/clean
 
 CMakeFiles/myGraph.dir/depend:
-	cd /home/thomas/Documents/Cours/code && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code /home/thomas/Documents/Cours/code/CMakeFiles/myGraph.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/thomas/Documents/cocode && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode /home/thomas/Documents/cocode/CMakeFiles/myGraph.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/myGraph.dir/depend
 

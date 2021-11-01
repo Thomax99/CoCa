@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/thomas/Documents/Cours/code/include/main -I/home/thomas/Documents/Cours/code/include/EdgeConProblem -I/home/thomas/Documents/Cours/code/src/parser/include -I/home/thomas/Documents/Cours/code/src/EdgeConProblem -I/home/thomas/Documents/Cours/code 
+C_INCLUDES = -I/home/thomas/Documents/cocode/include/main -I/home/thomas/Documents/cocode/include/EdgeConProblem -I/home/thomas/Documents/cocode/src/parser/include -I/home/thomas/Documents/cocode/src/EdgeConProblem -I/home/thomas/Documents/cocode 
 

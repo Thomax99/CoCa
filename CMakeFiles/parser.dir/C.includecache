@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Documents/Cours/code/Lexer.c
+/home/thomas/Documents/cocode/Lexer.c
 stdio.h
 -
 string.h
@@ -26,13 +26,13 @@ string.h
 stdlib.h
 -
 GraphList.h
-/home/thomas/Documents/Cours/code/GraphList.h
+/home/thomas/Documents/cocode/GraphList.h
 Parser.h
-/home/thomas/Documents/Cours/code/Parser.h
+/home/thomas/Documents/cocode/Parser.h
 unistd.h
 -
 
-/home/thomas/Documents/Cours/code/Lexer.h
+/home/thomas/Documents/cocode/Lexer.h
 stdio.h
 -
 string.h
@@ -46,17 +46,17 @@ inttypes.h
 unistd.h
 -
 
-/home/thomas/Documents/Cours/code/Parser.c
+/home/thomas/Documents/cocode/Parser.c
 GraphList.h
-/home/thomas/Documents/Cours/code/GraphList.h
+/home/thomas/Documents/cocode/GraphList.h
 Parser.h
-/home/thomas/Documents/Cours/code/Parser.h
+/home/thomas/Documents/cocode/Parser.h
 Lexer.h
-/home/thomas/Documents/Cours/code/Lexer.h
+/home/thomas/Documents/cocode/Lexer.h
 Graph.h
-/home/thomas/Documents/Cours/code/Graph.h
+/home/thomas/Documents/cocode/Graph.h
 Parser.h
-/home/thomas/Documents/Cours/code/Parser.h
+/home/thomas/Documents/cocode/Parser.h
 limits.h
 -
 stdint.h
@@ -90,11 +90,11 @@ fcntl.h
 errno.h
 -
 
-/home/thomas/Documents/Cours/code/Parser.h
+/home/thomas/Documents/cocode/Parser.h
 
-/home/thomas/Documents/Cours/code/src/parser/src/EdgeList.c
+/home/thomas/Documents/cocode/src/parser/src/EdgeList.c
 EdgeList.h
-/home/thomas/Documents/Cours/code/src/parser/src/EdgeList.h
+/home/thomas/Documents/cocode/src/parser/src/EdgeList.h
 stdio.h
 -
 stdlib.h
@@ -102,21 +102,21 @@ stdlib.h
 string.h
 -
 
-/home/thomas/Documents/Cours/code/src/parser/src/GraphListToGraph.c
+/home/thomas/Documents/cocode/src/parser/src/GraphListToGraph.c
 GraphListToGraph.h
-/home/thomas/Documents/Cours/code/src/parser/src/GraphListToGraph.h
+/home/thomas/Documents/cocode/src/parser/src/GraphListToGraph.h
 EdgeList.h
-/home/thomas/Documents/Cours/code/src/parser/src/EdgeList.h
+/home/thomas/Documents/cocode/src/parser/src/EdgeList.h
 NodeList.h
-/home/thomas/Documents/Cours/code/src/parser/src/NodeList.h
+/home/thomas/Documents/cocode/src/parser/src/NodeList.h
 stdlib.h
 -
 string.h
 -
 
-/home/thomas/Documents/Cours/code/src/parser/src/NodeList.c
+/home/thomas/Documents/cocode/src/parser/src/NodeList.c
 NodeList.h
-/home/thomas/Documents/Cours/code/src/parser/src/NodeList.h
+/home/thomas/Documents/cocode/src/parser/src/NodeList.h
 stdbool.h
 -
 stdio.h
@@ -126,15 +126,15 @@ stdlib.h
 string.h
 -
 
-/home/thomas/Documents/Cours/code/src/parser/src/Parsing.c
+/home/thomas/Documents/cocode/src/parser/src/Parsing.c
 Parsing.h
-/home/thomas/Documents/Cours/code/src/parser/src/Parsing.h
+/home/thomas/Documents/cocode/src/parser/src/Parsing.h
 Parser.h
-/home/thomas/Documents/Cours/code/src/parser/src/Parser.h
+/home/thomas/Documents/cocode/src/parser/src/Parser.h
 Lexer.h
-/home/thomas/Documents/Cours/code/src/parser/src/Lexer.h
+/home/thomas/Documents/cocode/src/parser/src/Lexer.h
 GraphListToGraph.h
-/home/thomas/Documents/Cours/code/src/parser/src/GraphListToGraph.h
+/home/thomas/Documents/cocode/src/parser/src/GraphListToGraph.h
 
 Lexer.h
 stdio.h

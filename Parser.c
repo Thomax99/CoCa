@@ -95,7 +95,7 @@ int yyerror(GraphList *expression, yyscan_t scanner, const char *msg) {
 }
  
 
-#line 99 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 99 "/home/thomas/Documents/cocode/Parser.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -1200,25 +1200,25 @@ yyreduce:
   case 5: /* graph_type: T_DIGRAPH  */
 #line 100 "src/parser/Parser.y"
                         { graph->directed = true;}
-#line 1204 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1204 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 6: /* graph_type: T_GRAPH  */
 #line 101 "src/parser/Parser.y"
                         { graph->directed = false;}
-#line 1210 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1210 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 21: /* attr_list: T_LBRACKET a_list T_RBRACKET  */
 #line 127 "src/parser/Parser.y"
                                                 { (yyval.stateInfo) = (yyvsp[-1].stateInfo); }
-#line 1216 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1216 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 22: /* attr_list: T_LBRACKET T_RBRACKET  */
 #line 128 "src/parser/Parser.y"
                                                 { (yyval.stateInfo).automataInfo = None; (yyval.stateInfo).color=NULL; }
-#line 1222 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1222 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 23: /* attr_list: T_LBRACKET a_list T_RBRACKET attr_list  */
@@ -1237,19 +1237,19 @@ yyreduce:
                                                     (yyval.stateInfo).color = (yyvsp[-2].stateInfo).color;
                                                     }
                                                 }
-#line 1241 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1241 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 24: /* attr_list: T_LBRACKET T_RBRACKET attr_list  */
 #line 143 "src/parser/Parser.y"
                                                 { (yyval.stateInfo) = (yyvsp[0].stateInfo); }
-#line 1247 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1247 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 25: /* a_list: attr_assignment  */
 #line 146 "src/parser/Parser.y"
                                         { (yyval.stateInfo) = (yyvsp[0].stateInfo);}
-#line 1253 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1253 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 26: /* a_list: attr_assignment T_COMMA a_list  */
@@ -1268,7 +1268,7 @@ yyreduce:
                                                 (yyval.stateInfo).color = (yyvsp[-2].stateInfo).color;
                                                 }
                                           }
-#line 1272 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1272 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 27: /* a_list: attr_assignment a_list  */
@@ -1287,28 +1287,28 @@ yyreduce:
                                                 (yyval.stateInfo).color = (yyvsp[-1].stateInfo).color;
                                                 }
                                           }
-#line 1291 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1291 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 28: /* attr_assignment: idrhs T_EQ idrhs  */
 #line 177 "src/parser/Parser.y"
                                      { 
      if(strcmp((yyvsp[-2].name),"color")==0) { (yyval.stateInfo).automataInfo = None; (yyval.stateInfo).color = (yyvsp[0].name); free((yyvsp[-2].name));} else { (yyval.stateInfo).color=NULL; if (strcmp((yyvsp[-2].name),"initial")==0) (yyval.stateInfo).automataInfo = Init; else if(strcmp((yyvsp[-2].name),"final")==0) (yyval.stateInfo).automataInfo = Final; else (yyval.stateInfo).automataInfo = None; free((yyvsp[-2].name)); free((yyvsp[0].name));}}
-#line 1298 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1298 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 29: /* idrhs: T_ID  */
 #line 181 "src/parser/Parser.y"
                     { (yyval.name) = (char*)malloc((strlen((yyvsp[0].name))+1)*sizeof(char)); strcpy((yyval.name),(yyvsp[0].name));
                     }
-#line 1305 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1305 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 30: /* idrhs: T_STRING  */
 #line 183 "src/parser/Parser.y"
                     { (yyval.name) = (char*)malloc((strlen((yyvsp[0].name))+1)*sizeof(char)); strcpy((yyval.name),(yyvsp[0].name));
                     }
-#line 1312 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1312 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 32: /* node_stmt: node_id attr_list  */
@@ -1323,7 +1323,7 @@ yyreduce:
                                 free((yyvsp[-1].name));
                                 if((yyvsp[0].stateInfo).color!=NULL) free((yyvsp[0].stateInfo).color);
                             }
-#line 1327 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1327 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 33: /* node_id: T_ID  */
@@ -1332,7 +1332,7 @@ yyreduce:
                       (yyval.name) = (char*)malloc((strlen((yyvsp[0].name))+1)*sizeof(char)); strcpy((yyval.name),(yyvsp[0].name));
                       if(graph->nodes == NULL) graph->nodes = addNode((yyvsp[0].name),false,false,NULL,NULL); else addOrUpdateNode((yyvsp[0].name),false,false,NULL,graph->nodes);
                     }
-#line 1336 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1336 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 34: /* node_id: T_ID port  */
@@ -1341,7 +1341,7 @@ yyreduce:
                       (yyval.name) = (char*)malloc((strlen((yyvsp[-1].name))+1)*sizeof(char)); strcpy((yyval.name),(yyvsp[-1].name));
                       if(graph->nodes == NULL) graph->nodes = addNode((yyvsp[-1].name),false,false,NULL,NULL); else addOrUpdateNode((yyvsp[-1].name),false,false,NULL,graph->nodes);
                     }
-#line 1345 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1345 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 42: /* edge_stmt: node_id edgerhs  */
@@ -1350,7 +1350,7 @@ yyreduce:
                                       graph->edges = addEdge((yyvsp[-1].name),(yyvsp[0].name),graph->edges);
                                       free((yyvsp[-1].name)); free((yyvsp[0].name));
                                     }
-#line 1354 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1354 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 43: /* edge_stmt: node_id edgerhs attr_list  */
@@ -1359,7 +1359,7 @@ yyreduce:
                                       graph->edges = addEdge((yyvsp[-2].name),(yyvsp[-1].name),graph->edges);
                                       free((yyvsp[-2].name)); free((yyvsp[-1].name));
                                     }
-#line 1363 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1363 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 46: /* edgerhs: edgeop node_id  */
@@ -1367,7 +1367,7 @@ yyreduce:
                                 { //printf("edge end seen\n");
                                   (yyval.name) = (yyvsp[0].name);
                                 }
-#line 1371 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1371 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
   case 47: /* edgerhs: edgeop node_id edgerhs  */
@@ -1377,11 +1377,11 @@ yyreduce:
                                   free((yyvsp[0].name));
                                   (yyval.name) = (yyvsp[-1].name);
                                 }
-#line 1381 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1381 "/home/thomas/Documents/cocode/Parser.c"
     break;
 
 
-#line 1385 "/home/thomas/Documents/Cours/code/Parser.c"
+#line 1385 "/home/thomas/Documents/cocode/Parser.c"
 
       default: break;
     }

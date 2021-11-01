@@ -35,8 +35,8 @@
    especially those whose name start with YY_ or yy_.  They are
    private implementation details that can be changed or removed.  */
 
-#ifndef YY_YY_HOME_THOMAS_DOCUMENTS_COURS_CODE_PARSER_H_INCLUDED
-# define YY_YY_HOME_THOMAS_DOCUMENTS_COURS_CODE_PARSER_H_INCLUDED
+#ifndef YY_YY_HOME_THOMAS_DOCUMENTS_COCODE_PARSER_H_INCLUDED
+# define YY_YY_HOME_THOMAS_DOCUMENTS_COCODE_PARSER_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -54,7 +54,7 @@ extern int yydebug;
       char* color;
   } stateInformation;
 
-#line 58 "/home/thomas/Documents/Cours/code/Parser.h"
+#line 58 "/home/thomas/Documents/cocode/Parser.h"
 
 /* Token kinds.  */
 #ifndef YYTOKENTYPE
@@ -99,7 +99,7 @@ union YYSTYPE
     char* name;
     stateInformation stateInfo;
 
-#line 103 "/home/thomas/Documents/Cours/code/Parser.h"
+#line 103 "/home/thomas/Documents/cocode/Parser.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -111,4 +111,4 @@ typedef union YYSTYPE YYSTYPE;
 
 int yyparse (GraphList *graph, yyscan_t scanner);
 
-#endif /* !YY_YY_HOME_THOMAS_DOCUMENTS_COURS_CODE_PARSER_H_INCLUDED  */
+#endif /* !YY_YY_HOME_THOMAS_DOCUMENTS_COCODE_PARSER_H_INCLUDED  */

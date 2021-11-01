@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConGraph.c" "/home/thomas/Documents/Cours/code/CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o"
-  "/home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConReduction.c" "/home/thomas/Documents/Cours/code/CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o"
-  "/home/thomas/Documents/Cours/code/src/EdgeConProblem/EdgeConResolution.c" "/home/thomas/Documents/Cours/code/CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o"
+  "/home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConGraph.c" "/home/thomas/Documents/cocode/CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConGraph.c.o"
+  "/home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConReduction.c" "/home/thomas/Documents/cocode/CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConReduction.c.o"
+  "/home/thomas/Documents/cocode/src/EdgeConProblem/EdgeConResolution.c" "/home/thomas/Documents/cocode/CMakeFiles/biCon.dir/src/EdgeConProblem/EdgeConResolution.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

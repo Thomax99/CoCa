@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Documents/Cours/code/src/main/Graph.c
+/home/thomas/Documents/cocode/src/main/Graph.c
 Graph.h
-/home/thomas/Documents/Cours/code/src/main/Graph.h
+/home/thomas/Documents/cocode/src/main/Graph.h
 stdio.h
 -
 string.h
